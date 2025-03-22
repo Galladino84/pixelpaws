@@ -1,0 +1,14 @@
+.pixelpaws-idle {
+    width: 128px;
+    height: 128px;
+    background-image: url('src/assets/sprites/idle.png');
+    image-rendering: pixelated;
+    animation: blink-idle 1.5s steps(1) infinite;
+  }
+  
+  @keyframes blink-idle {
+    0%   { background-position:   0 0; }  /* occhi aperti */
+    50%  { background-position: -128px 0; }  /* occhi chiusi */
+    100% { background-position:   0 0; }  /* occhi aperti di nuovo */
+  }
+  
